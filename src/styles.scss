@@ -1,0 +1,117 @@
+* {
+  box-sizing: border;
+}
+
+body {
+  margin: 0;
+}
+
+.Apps {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.App {
+  height: calc(100vh / 2);
+  width: 50%;
+  font-family: "roboto";
+  text-align: center;
+  display: flex; 
+  box-shadow: 0 1px 3px lightgray;
+  
+  .Main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .my-console {
+    background: lightgray;
+    width: 250px;
+    padding: 30px;
+    margin: 10px;
+  }
+}
+
+.room {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.players {
+  width: 100%;
+  padding: 30px;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+
+  .player {
+    margin: 10px;
+    padding: 20px;
+  }
+  .p1 {
+    border: 3px solid gold;
+  }
+  .result-W {
+    background: rgb(196, 228, 196);
+  }
+  .result-L {
+    background: rgb(185, 75, 75);
+  }
+}
+
+.phases {
+  font-size: 0.9em;
+  font-family: monospace;
+  display: flex;
+
+  > div {
+    margin: 0 5px;
+    padding: 5px;
+    background: #eee;
+  }
+
+  .active{
+    background: lightpink;
+  }
+}
+
+.box {
+  box-shadow: 1px 2px 3px 3px lightgray;
+  border-radius: 3px;
+}
+
+.label {
+  background: hotpink;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.9em;
+  margin: 0 2px;
+  padding: 1px;
+}
+
+.card {
+  padding: 10px 3px;
+}
+
+.table1 {
+  font-size: 0.9em;
+  th {
+    background: #eee;
+  }
+}
+
+.my-console {
+  white-space: pre;
+}
+
+.userinfo {
+  background: #eee;
+  padding: 3px;
+  border-radius: 3px;
+}

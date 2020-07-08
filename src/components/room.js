@@ -250,6 +250,7 @@ export default function Room({ debug, exitRoom }) {
     });
 
     io.on("srqst_ingame_player_action", (data) => {
+      
       debug("srqst_ingame_player_action", data);
       setRoom((room) => ({ ...room, ...data }));
     });
@@ -259,9 +260,6 @@ export default function Room({ debug, exitRoom }) {
       setRoom((room) => ({ ...room, ...data }));
 
       io.emit2("sresp_ingame_player_action_update");
-      setTimeout(() => {
-        io.emit2("sresp_ingame_deal");
-      }, 1000);
     });
 
     io.on("srqst_ingame_three_card", (data) => {
@@ -283,7 +281,6 @@ export default function Room({ debug, exitRoom }) {
     io.on("srqst_ingame_banker_action_update", (data) => {
       debug("srqst_ingame_banker_action_update", data);
       setRoom((room) => ({ ...room, ...data }));
-      io.emit2("sresp_ingame_deal");
     });
 
     io.on("srqst_ingame_result", (data) => {

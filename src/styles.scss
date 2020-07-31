@@ -9,13 +9,11 @@ body {
 .Apps {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   height: 100vh;
 }
 
 .App {
   height: calc(100vh / 2);
-  width: 50%;
   font-family: "roboto";
   text-align: center;
   display: flex; 

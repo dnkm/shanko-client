@@ -24,7 +24,6 @@ function Apps() {
       <App defid='daniel' />
       <App defid='daniel2' />
       <App defid='daniel3' />
-      <App />
     </div>
   );
 }

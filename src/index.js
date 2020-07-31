@@ -9,9 +9,9 @@ import Rooms from "./components/rooms";
 import Room from "./components/room";
 import UserContext from "./UserContext";
 
-// const endpoint = `https://18.140.235.74`;
+const endpoint = `https://18.140.235.74`;
 // const endpoint = "https://72u6s.sse.codesandbox.io/";
-const endpoint = "localhost:3004";
+// const endpoint = "localhost:3004";
 
 // phases
 // -1 : before login
